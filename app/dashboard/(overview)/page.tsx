@@ -5,12 +5,21 @@ import { lusitana } from '@/app/ui/fonts';
 import { Suspense } from 'react';
 import CardWrapper from '@/app/ui/dashboard/cards';
 
+import { Metadata } from 'next';
+
+
+
 import { 
     RevenueChartSkeleton, 
     LatestInvoicesSkeleton,
     CardsSkeleton
  } from '@/app/ui/skeletons';
  
+
+ export const metadata: Metadata = {
+    title: 'Admin Home',
+  };
+   
 
 export default async function Page() {
 
